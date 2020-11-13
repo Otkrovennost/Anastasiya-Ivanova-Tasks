@@ -1,12 +1,12 @@
 # Anastasiya Ivanova
 
-![](//task-1/photo.jpg "It is me")
+![](https://github.com/Otkrovennost/Anastasiya-Ivanova-Tasks/tree/task-1/task-1/photo.jpg "It is me")
 
 --------------------------------------------------------------------------------------------------------------
 
 ## Summary:
 *My name is Anastasiya.
-==My main goal is striving for new knowledge and improving myself as a professional frontend-developer.== 
+My main goal is striving for new knowledge and improving myself as a professional frontend-developer.
 I’d describe myself as a goal-oriented and hardworking person with good organizational skills.
 Regardless of the situation I have the ability to adapt and work under any circumstances.
 I'm engaged in self-education and I'm interested in web technologies and trying to learn more about Frontend.*
