@@ -1,6 +1,6 @@
 # Anastasiya Ivanova
 
-![](https://github.com/Otkrovennost/Anastasiya-Ivanova-Tasks/tree/task-1/task-1/photo.jpg "It is me")
+![](task-1/photo.jpg "It is me")
 
 --------------------------------------------------------------------------------------------------------------
 
