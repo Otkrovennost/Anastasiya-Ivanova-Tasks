@@ -40,12 +40,15 @@
             <ul class="registration__list">
               <li class="registration__item">
                 <input type="text" name="user-name" placeholder="Name" required>
+                <i class="fas fa-user"></i>
               </li>
               <li class="registration__item">
                 <input type="text" name="user-email" placeholder="Email" required>
+                <i class="fas fa-at"></i>
               </li>
               <li class="registration__item">
                 <input type="password" name="uaer-password" placeholder="Password" required>
+                <i class="fas fa-unlock"></i>
               </li>
             </ul>
             <div class="registration__agree">
@@ -69,11 +72,17 @@
               </div>
             </div>
             <div class="registration__btn-block">
-              <button class="registration__button" type="button">Sign up</button>
-              <button class="registration__button registration__button--login" href="#">Sign in</button>
+              <button class="registration__button" type="submit">Sign up</button>
+              <button class="registration__button registration__button--login" type="button">Sign in</button>
             </div>
           </form>
-          <img src="img/photo.png" alt="Card" width="451" height="750">
+          <div class="registration__img">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/photo-mobile.png">
+              <source media="(max-width: 1023px)" srcset="img/photo-tablet.png">
+              <img src="img/photo-desktop.png" width="457" height="760" alt="Card">
+            </picture>
+          </div>
         </div>
       </section>
     </main>

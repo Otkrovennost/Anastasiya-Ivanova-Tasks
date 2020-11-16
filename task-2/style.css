@@ -36,11 +36,26 @@ body {
     color: #3f4244;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: color, opacity, background-color, border-color, box-shadow;
+}
+  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .registration {
     display: flex;
-    max-width: 1400px;
     width: 80%;
-    min-height: 750px;
+    max-width: 1460px;
+    min-height: 760px;
     margin: 150px auto;
     border-radius: 10px;
     box-shadow: 4px 4px 8px 8px rgba(34, 60, 80, 0.2);
@@ -51,11 +66,12 @@ body {
 
 .registration form {
     width: 58%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 60px;
+    padding: 40px 60px 20px;
 }
 
 .registration__title {
@@ -75,7 +91,7 @@ body {
 .registration__social {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 20px 0;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
@@ -88,13 +104,21 @@ body {
 }
 
 .registration__item {
+    position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
 
+.registration__item i {
+    position: absolute;
+    top: 33%;
+    right: 2%;
+    color: #d9dddf;
+}
+
 .registration__item input {
     width: 100%;
-    padding: 15px;
+    padding: 15px 40px 15px 15px;
     box-sizing: border-box;
     font-size: 22px;
     line-height: 28px;
@@ -120,8 +144,17 @@ body {
     color: #ff5353;
 }
 
+.registration__terms:focus,
+.registration__terms:hover,
+.registration__policy:focus,
+.registration__policy:hover {
+    outline: none;
+    opacity: 0.6;
+}
+
 .registration__agree {
     width: 100%;
+    display: flex;
     margin-bottom: 15px;
 }
 
@@ -174,7 +207,7 @@ body {
 .registration__button {
     display: table;
     width: 48%;
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 15px;
     font-family: "Calibri", "Arial", sans-serif;
     font-size: 22px;
@@ -190,6 +223,7 @@ body {
   
 .registration__button:focus,
 .registration__button:hover {
+    outline: none;
     color: #ff5353;
     background-color: transparent;
 }
@@ -204,9 +238,18 @@ body {
 
 .registration__button--login:focus,
 .registration__button--login:hover {
+    outline: none;
     color: #fff;
     background-color: #ff5353;
     border: 1px solid #ff5353;
+}
+
+.registration__img {
+    margin-left: auto;
+}
+
+.registration__img img {
+    height: 100%;
 }
 
 .social__item {
@@ -216,6 +259,7 @@ body {
     width: 42px;
     height: 42px;
     margin-right: 15px;
+    margin-bottom: 20px;
     border: 1px solid #000;
     border-radius: 30px;
     transition: all easy 0.6s;
@@ -290,4 +334,77 @@ body {
 .radio-block__input:focus + .radio-block__label::before,
 .radio-block__input:hover + .radio-block__label::before {
     border: 1px solid rgb(179, 12, 12);
+}
+
+@media (max-width: 1023px) {
+    .registration {
+        flex-direction: column;
+    }
+
+    .registration form {
+        width: calc(100% - 40px);
+        box-sizing: content-box;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .registration__img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .registration__img img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .registration {
+        min-width: 280px;
+    }
+
+    .registration__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .registration p {
+        text-align: center;
+    }
+
+    .registration__item input {
+        padding: 10px 30px 10px 10px;
+        font-size: 18px;
+    }
+
+    .registration__item i {
+        top: 24%;
+    }
+
+    .registration__checkbox {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .registration__checker + .registration__checkbox::before {
+        top: 18%
+    }
+
+    .registration__checker:checked + .registration__checkbox::after {
+       top: 32%; 
+    }
+
+    .registration__button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .social__item {
+        margin-right: 8px;
+    }
+
+    .radio-block__label {
+        font-size: 22px;
+    }
 }
