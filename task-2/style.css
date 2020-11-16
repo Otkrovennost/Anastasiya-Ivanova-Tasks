@@ -86,6 +86,7 @@ img {
 .registration p {
     margin: 0 0 20px 0;
     padding: 0;
+    text-align: center;
 }
 
 .registration__social {
