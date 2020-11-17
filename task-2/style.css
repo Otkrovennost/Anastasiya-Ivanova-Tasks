@@ -1,0 +1,411 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../Calibri.woff2") format("woff2"), url("../fonts/Calibri.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+
+body {
+    min-width: 100%;
+    margin: 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Calibri", "Arial", sans-serif;
+    color: #3f4244;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: color, opacity, background-color, border-color, box-shadow;
+}
+  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.registration {
+    display: flex;
+    width: 80%;
+    max-width: 1460px;
+    min-height: 760px;
+    margin: 150px auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 8px rgba(34, 60, 80, 0.2);
+    background-color: #ffffff;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.registration form {
+    width: 58%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px 20px;
+}
+
+.registration__title {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #ff5353;
+}
+
+.registration p {
+    margin: 0 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.registration__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.registration__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.registration__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registration__item i {
+    position: absolute;
+    top: 33%;
+    right: 2%;
+    color: #d9dddf;
+}
+
+.registration__item input {
+    width: 100%;
+    padding: 15px 40px 15px 15px;
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 28px;
+    font-family: "Calibri", "Arial", sans-serif;
+    letter-spacing: 1px;
+    color: #a0a3a5;
+    background-color: rgb(243, 241, 241);
+    resize: none;
+    overflow: hidden;
+    border: 1px solid #a0a3a5;
+    border-radius: 10px; 
+}
+
+.registration__item input:focus,
+.registration__item input:hover {
+  border: 1px solid #6b7265;
+  outline: 0;
+}
+
+.registration__terms,
+.registration__policy {
+    text-decoration: none;
+    color: #ff5353;
+}
+
+.registration__terms:focus,
+.registration__terms:hover,
+.registration__policy:focus,
+.registration__policy:hover {
+    outline: none;
+    opacity: 0.6;
+}
+
+.registration__agree {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.registration__checkbox {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.registration__checker + .registration__checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid  #ff5353;
+    background-color: #ff5353;
+    border-radius: 3px;
+}
+  
+.registration__checker:checked + .registration__checkbox::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 22px;
+    height: 17px;
+    background-image: url("img/icon-tick.svg");
+}
+  
+.registration__checker:focus + .registration__checkbox::before,
+.registration__checker:hover + .registration__checkbox::before {
+    border: 1px solid rgb(179, 12, 12);
+}
+
+.registration__radio-block h2 {
+    font-size: 20px;
+    line-height: 22px;
+    color: #a0a3a5;
+}
+
+.registration__btn-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registration__button {
+    display: table;
+    width: 48%;
+    margin: 0 0 20px 0;
+    padding: 15px;
+    font-family: "Calibri", "Arial", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff5353;
+    border: 1px solid #ff5353;
+    border-radius: 8px;
+    transition: 0.9s;
+    cursor: pointer;
+}
+  
+.registration__button:focus,
+.registration__button:hover {
+    outline: none;
+    color: #ff5353;
+    background-color: transparent;
+}
+
+.registration__button--login {
+    margin-left: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #ff5353;
+    background-color: transparent;
+}
+
+.registration__button--login:focus,
+.registration__button--login:hover {
+    outline: none;
+    color: #fff;
+    background-color: #ff5353;
+    border: 1px solid #ff5353;
+}
+
+.registration__img {
+    margin-left: auto;
+}
+
+.registration__img img {
+    height: 100%;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    transition: all easy 0.6s;
+    cursor: pointer;
+}
+
+.social__item:focus,
+.social__item:hover {
+    background-color: #ff5353;
+    border: 1px solid #ff5353;
+    transition: all easy 0.6s;
+}
+
+.social__item:focus .social__link,
+.social__item:hover .social__link {
+    color:#fff;
+}
+
+.social__link {
+    color: #000;
+}
+
+.radio-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.radio-block h2 {
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #640e0e;
+    text-align: center;
+}
+
+.radio-block__item {
+    margin-bottom: 15px;
+}
+
+.radio-block__label {
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.radio-block__input + .radio-block__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid  #ff5353;
+    border-radius: 50%;
+}
+  
+.radio-block__input:checked + .radio-block__label::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    background-color: #ff5353;
+    border: 1px solid  #ff5353;
+    border-radius: 50%;
+}
+
+.radio-block__input:focus + .radio-block__label::before,
+.radio-block__input:hover + .radio-block__label::before {
+    border: 1px solid rgb(179, 12, 12);
+}
+
+@media (max-width: 1023px) {
+    .registration {
+        flex-direction: column;
+    }
+
+    .registration form {
+        width: calc(100% - 40px);
+        box-sizing: content-box;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .registration__img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .registration__img img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .registration {
+        min-width: 280px;
+    }
+
+    .registration__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .registration p {
+        text-align: center;
+    }
+
+    .registration__item input {
+        padding: 10px 30px 10px 10px;
+        font-size: 18px;
+    }
+
+    .registration__item i {
+        top: 24%;
+    }
+
+    .registration__checkbox {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .registration__checker + .registration__checkbox::before {
+        top: 18%
+    }
+
+    .registration__checker:checked + .registration__checkbox::after {
+       top: 32%; 
+    }
+
+    .registration__button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .social__item {
+        margin-right: 8px;
+    }
+
+    .radio-block__label {
+        font-size: 22px;
+    }
+}
