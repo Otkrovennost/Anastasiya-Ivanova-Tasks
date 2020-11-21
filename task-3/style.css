@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../Calibri.woff2") format("woff2"), url("../fonts/Calibri.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+
+body {
+    min-width: 100%;
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "Calibri", "Arial", sans-serif;
+    color: #3f4244;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: color, opacity, background-color, border-color, box-shadow;
+}
+  
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.header {
+    background-color: #e5e0e0;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px 0 0 0;
+    list-style: none;
+}
+
+.nav__item {
+    margin: 0 50px 20px 0;
+    text-transform: uppercase
+}
+
+.nav__link {
+    color: #510505;
+    transition: all easy 0.6s;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+    color: #d50b0b;
+    transition: color easy 0.6s;
+}
+
+.nav__link--active {
+    border-bottom: 1px solid #490e1d;
+}
+
+.start-screen {
+    position: relative;
+}
+
+.start-screen h2 {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #d50b0b;
+}
+
+.articles {
+    padding-top: 60px;
+    background-color: #eed3d3;
+}
+
+.articles__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles__item {
+    display: flex;
+    width: calc(50% - 40px);
+    margin-right: 80px;
+}
+
+.articles__item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.acticles__item-img {
+    height: 225px;
+    margin-top: 64px;
+}
+
+.articles__item-content {
+    width: calc(100% - 100px);
+    padding-right: 20px;
+}
+
+.articles__item-content h2 {
+    text-align: center;
+    color: #8c1c2c;
+}
+
+.footer {
+    background-color: #e8d7d7;
+}
+
+.footer__rights {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #490e1d;
+}
+
+.footer__rights span,
+.footer__rights a {
+    margin-right: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    transition: color easy 0.6s;
+}
+
+.footer__rights .footer__rights-link-dev {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.footer__rights a:focus,
+.footer__rights a:hover {
+    color: #d50b0b;
+    transition: color easy 0.6s;
+}
+
+@media (max-width: 1023px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .articles__item {
+        flex-direction: column;
+        width: calc(25% - 12px);
+        margin-right: 15px;
+    }
+
+    .articles__item-content {
+        order: 2;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .acticles__item-img {
+        order: 0;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .articles__item:nth-child(2n) {
+        margin-right: 15px;
+    }
+
+    .articles__item:last-of-type {
+        margin-right: 0;
+    }
+}
+  
+@media (max-width: 767px) {
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .nav__item {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .start-screen h2 {
+        font-size: 35px;
+    }
+
+    .articles {
+        padding-top: 20px;
+    }
+
+    .articles__item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .articles__item-content {
+        order: 0;
+    }
+
+    .articles__item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .footer__rights {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footer__rights span,
+    .footer__rights a {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer__rights .footer__rights-link-dev {
+        margin-left: 0;
+    }
+}
+
+.preloader-block {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #ece7e7;
+    z-index: 55;
+    animation: block-hide 5s;
+    animation-iteration-count: 1 ease-in;
+    animation-fill-mode: forwards;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    border: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #860909;
+    animation: preload-snip 4s linear infinite forwards;
+    animation-iteration-count: 1;
+}
+.preloader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #be6e79;
+    animation: preload-snip 5s linear infinite forwards;
+    animation-iteration-count: 1;
+}
+
+.preloader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f7bdcc;
+    animation: preload-snip 2.5s linear infinite forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes preload-snip {
+    0%   {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes block-hide {
+    0% {
+        opacity: 100%;
+    }
+    
+    50% {
+        opacity: 80%;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
