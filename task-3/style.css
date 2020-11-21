@@ -126,7 +126,7 @@ img {
     margin-right: 0;
 }
 
-.acticles__item-img {
+.articles__item-img {
     height: 225px;
     margin-top: 64px;
 }
@@ -136,7 +136,7 @@ img {
     padding-right: 20px;
 }
 
-.articles__item-content h2 {
+.articles__item-content h3 {
     text-align: center;
     color: #8c1c2c;
 }
@@ -190,7 +190,7 @@ img {
         padding-right: 0;
     }
 
-    .acticles__item-img {
+    .articles__item-img {
         order: 0;
         height: auto;
         margin-top: 0;
