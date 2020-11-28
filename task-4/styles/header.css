@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  border: 1px solid #ffffff;
+  background-color: #35393c;
+}
+
+@media (max-width: 1023px) { 
+  .header {
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,31 @@
+.quote {
+  position: relative;
+  margin: 0;
+  padding-left: 55px;
+}
+
+.quote::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/bg/quotes.svg");
+  background-repeat: no-repeat;
+  border-style: center;
+}
+
+.quote__text {
+  width: 80%;
+  margin: 0 0 20px;
+}
+
+.quote__author {
+  font-style: normal;
+}
+
+.quote__author span {
+  font-style: italic;
+  color: #53535f; 
+}

@@ -1,0 +1,46 @@
+.feedback__title {
+  margin: 0 0 20px 0;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__form input,
+.feedback__form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px 40px 15px 15px;
+  box-sizing: border-box;
+  font-family: "Hind", "Arial", sans-serif;
+  letter-spacing: 1px;
+  color: #e5e9f1;
+  border: none;
+  background-color: #313035;
+  resize: none;
+  overflow: hidden;
+  opacity: 50%;
+}
+
+.feedback__button {
+  display: table;
+  width: 100px;
+  padding: 15px 20px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #13beda;
+  border: none;
+  cursor: pointer;
+  transition: all 0.9s;
+}
+
+.feedback__button:focus,
+.feedback__button:hover {
+  color: #13beda;
+  background-color: #ffffff;
+}

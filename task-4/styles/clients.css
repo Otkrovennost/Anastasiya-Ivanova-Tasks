@@ -1,0 +1,43 @@
+.clients {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.clients__content {
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+.clients__title {
+  margin: 0 0 20px 0;
+  color: #53535f; 
+}
+
+.clients__text {
+  margin: 0 0 20px 0;
+}
+
+.clients__img-block {
+  width: 50%;
+}
+
+@media (max-width: 1023px) { 
+  .clients {
+    flex-direction: column;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  .clients__content {
+    padding: 0 25px;
+  }
+
+  .clients__img-block {
+    width: 100%;
+  }
+
+  .clients__img {
+    width: 100%;
+    height: auto;
+  }
+}

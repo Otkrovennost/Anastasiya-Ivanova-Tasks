@@ -1,0 +1,36 @@
+.proposals {
+  padding: 100px 0;
+  background-color: #fafafa;
+}
+
+.proposals__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+
+.proposals__item {
+  width: calc(30% - 1px);
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+
+.proposals__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  .proposals {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .proposals__item {
+    width: 100%;
+    margin-bottom: 70px;
+    margin-right: 0;
+  }
+}
