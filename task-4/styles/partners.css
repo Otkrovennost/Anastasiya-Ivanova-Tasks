@@ -32,10 +32,16 @@
 @media (max-width: 1023px) { 
   .partners__list {
     justify-content: normal;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
   }
 
   .partners__item {
-    margin-right: 35px;
+    margin-right: 8%;
+  }
+  
+  .partners__img {
+    width: auto;
   }
 }
 
@@ -44,15 +50,16 @@
     padding: 20px 0;
   } 
 
+  .partners__list {
+    flex-wrap: wrap;
+    overflow-x: none;
+  }
+
   .partners__item {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-right: 0;
-  }
-
-  .partners__img {
-    width: auto;
   }
 }
