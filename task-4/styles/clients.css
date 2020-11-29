@@ -26,15 +26,15 @@
   .clients {
     min-height: 600px;
     box-sizing: border-box;
-    margin-right: -20px;
-    margin-left: -20px;
+    margin-right: 0;
+    margin-left: 0;
     padding-bottom: 50%;
     background-position: 0 bottom;
     background-size: 100%;
   }
 
   .clients__content {
-    padding: 0 25px;
+    padding: 0 20px;
   }
 
   .clients__title {
@@ -43,5 +43,11 @@
 
   .clients__text {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .clients__content {
+    padding: 0 10px;
   }
 }
