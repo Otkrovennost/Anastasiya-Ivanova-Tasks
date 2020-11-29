@@ -14,18 +14,19 @@
   margin-bottom: 20px;
 }
 
-.partners__link {
-  transition: all  easy 0.9s;
-}
-
-.partners__link:focus,
-.partners__link:hover {
+.partners__link:focus .partners__img,
+.partners__link:hover .partners__img {
   opacity: 0.6;
-  transition: all  easy 0.9s;
+  transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s  ease-in-out;
 }
 
 .partners__img {
   width: 100%;
+  transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s  ease-in-out;
 }
 
 @media (max-width: 1023px) { 

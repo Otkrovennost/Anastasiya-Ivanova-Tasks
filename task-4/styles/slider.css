@@ -97,7 +97,6 @@
 .slider__button:hover {
   color: #53535f;
   background-color: #ffffff;
-  transition: all 0.9s;
 }
 
 @-webkit-keyframes check {

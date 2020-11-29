@@ -23,6 +23,12 @@
   resize: none;
   overflow: hidden;
   opacity: 50%;
+  outline: transparent;
+}
+
+.feedback__form input:focus::-webkit-input-placeholder,
+.feedback__form textarea:focus::-webkit-input-placeholder {
+  color: rgb(238, 232, 232);
 }
 
 .feedback__button {

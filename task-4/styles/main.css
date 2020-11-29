@@ -8,5 +8,14 @@
   color: #ffffff;
   background-color: transparent;
   cursor: pointer;
-  transition: all 0.9s;
+  transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s  ease-in-out;
+}
+
+.main__button:focus,
+.main__button:hover {
+  transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -webkit-transition: all 0.9s  ease-in-out;
 }
