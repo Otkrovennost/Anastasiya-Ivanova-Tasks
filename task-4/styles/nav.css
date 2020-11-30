@@ -1,0 +1,166 @@
+.nav {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.nav__menu {
+  margin: 0 0 0 auto;
+}
+
+.nav__menu-toggle {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-right: 40px;
+}
+
+.nav__item:last-of-type {
+  margin-right: 0;
+}
+
+.nav__link {
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  display: none;
+  bottom: 48%;
+  left: -16px;
+  width: 12px;
+  height: 2px;
+  background-color: #13beda;
+}
+
+.nav__link--active::before  {
+  display: block;
+}
+
+.nav__link:focus::before,
+.nav__link:hover::before {
+  display: block;
+}
+
+.nav__logo--dark {
+  display: none;
+}
+
+@media (max-width: 1023px) { 
+  .nav__menu-toggle {
+    display: block;
+    opacity: 0;
+  }
+  
+  .nav__menu-toggle:checked ~ .nav__menu-btn > span {
+    width: 30px;
+    transform: rotate(135deg);
+  }
+  .nav__menu-toggle:checked ~ .nav__menu-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .nav__menu-toggle:checked ~ .nav__menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .nav__menu-toggle:checked ~ .nav__list {
+    visibility: visible;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav__menu-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .nav__menu-btn > span,
+  .nav__menu-btn > span::before,
+  .nav__menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: 0.5s;
+  }
+
+  .nav__menu-btn > span::before {
+    content: '';
+    top: -8px;
+    width: 10px;
+  }
+
+  .nav__menu-btn > span::after {
+    content: '';
+    top: 8px;
+    width: 30px;
+  }
+  
+  .nav__list {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #fafafa;
+    transition-duration: .25s;
+  }
+  
+  .nav__item {
+    margin-right: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 12px 24px;
+    color: #53535f;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  .nav__logo {
+    display: none;
+  }
+
+  .nav__logo--dark {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav__list {
+    width: 100%;
+  }
+}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hi-tech design</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="top">
+    <header class="header">
+      <h1 class="visually-hidden">Hi-tech design</h1>
+      <nav class="header__nav nav container">
+        <a class="nav__logo" aria-label="Logo">
+          <img src="img/content/logo.png" width="103" height="19" alt="Logo">
+        </a>
+        <a class="nav__logo nav__logo--dark" aria-label="Logo">
+          <img src="img/content/logo-dark.png" width="103" height="19" alt="Logo">
+        </a>
+        <div class="nav__menu">
+          <input class="nav__menu-toggle" id="toggle" type="checkbox" />
+          <label class="nav__menu-btn" for="toggle">
+            <span></span>
+          </label>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#pricing">
+                Pricing
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#products">
+                Products
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#nowhear">
+                FAQ
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="slider" aria-label="Teasers">
+        <div class="slider__content">
+          <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked"/>
+          <input class="slider__nav slider__nav--second" type="radio" name="slider" title="slide2"/>
+          <div class="slider__inner">
+            <div class="slider__item slider__item--first">
+              <div class="slider__item-content container">
+                <h2 class="slider__item-title">Hi-tech design</h2>
+                <p class="slider__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="slider__button main__button" type="button">Explore</button>
+              </div>
+            </div>
+            <div class="slider__item slider__item--second">
+              <div class="slider__item-content container">
+                <h2 class="slider__item-title">Hi-tech design</h2>
+                <p class="slider__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="slider__button main__button" type="button">Explore</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="about">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <ul class="advantages__list container">
+          <li class="advantages__item">
+            <i class="fas fa-info"></i>
+            <h3 class="advantages__item-title">Art of coding</h3>
+            <p class="advantages__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <i class="fas fa-mobile"></i>
+            <h3 class="advantages__item-title">Responsive design</h3>
+            <p class="advantages__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <i class="fas fa-medal"></i>
+            <h3 class="advantages__item-title">Feature reach</h3>
+            <p class="advantages__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <i class="fas fa-book"></i>
+            <h3 class="advantages__item-title">Useful documentation</h3>
+            <p class="advantages__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <i class="far fa-clock"></i>
+            <h3 class="advantages__item-title">Fast delivery</h3>
+            <p class="advantages__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <i class="fas fa-medal"></i>
+            <h3 class="advantages__item-title">Free plugins</h3>
+            <p class="advantages__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="products container" id="products">
+        <h2 class="products__title">Latest products</h2>
+        <p class="products__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <ul class="products__list">
+          <li class="products__item">
+            <img class="products__item-img" src="img/content/products-01.jpg" width="970" height="647" alt="Photo product 1">
+            <div class="products__item-info">
+              <a class="products__item-link" href="#nowhear">
+                <h3 class="products__item-title">Triangle roof</h3>
+              </a>
+              <span class="products__item-mark">Managment</span>
+            </div>
+            <p class="products__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="products__item-link products__item-link--more" href="#nowhear">Read more</a>
+          </li>
+          <li class="products__item">
+            <img class="products__item-img" src="img/content/products-02.jpg" width="970" height="647" alt="Photo product 2">
+            <div class="products__item-info">
+              <a class="products__item-link" href="#nowhear">
+                <h3 class="products__item-title">Curved corners</h3>
+              </a>
+              <span class="products__item-mark">Development</span>
+            </div>
+            <p class="products__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="products__item-link products__item-link--more" href="#nowhear">Read more</a>
+          </li>
+          <li class="products__item">
+            <img class="products__item-img" src="img/content/products-03.jpg" width="970" height="647" alt="Photo product 3">
+            <div class="products__item-info">
+              <a class="products__item-link" href="#nowhear">
+                <h3 class="products__item-title">Bird on green</h3>
+              </a>
+              <span class="products__item-mark">Design</span>
+            </div>
+            <p class="products__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a class="products__item-link products__item-link--more" href="#nowhear">Read more</a>
+          </li>
+        </ul>
+      </section>
+      <section class="partners" aria-label="Our partners">
+        <ul class="partners__list container">
+          <li class="partners__item">
+            <a class="partners__link" href="https://discord.com/" target="_blank" rel="nofollow noopener">
+              <img class="partners__img" src="img/content/partners-01.png" width="203" height="77" alt="Photo logo Discord">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="https://discord.com/" target="_blank" rel="nofollow noopener">
+              <img class="partners__img" src="img/content/partners-02.png" width="203" height="77" alt="Photo logo Netflix">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="https://www.broadcom.com/" target="_blank" rel="nofollow noopener">
+              <img class="partners__img" src="img/content/partners-03.png" width="203" height="77" alt="Photo logo Broadcom">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="https://hoop.photo/" target="_blank" rel="nofollow noopener">
+              <img class="partners__img" src="img/content/partners-04.png" width="203" height="77" alt="Photo logo Hoop">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="https://www.airbnb.ru/" target="_blank" rel="nofollow noopener">
+              <img class="partners__img" src="img/content/partners-05.png" width="203" height="77" alt="Photo logo Airbn">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews container">
+        <h2 class="reviews__title">Customer reviews</h2>
+        <blockquote class="reviews__quote quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <cite class="quote__author"><span>Jon Malner,</span> Metronic Customer</cite>
+        </blockquote>
+      </section>
+      <section class="proposals" aria-label="Our proposals" id="pricing">
+        <ul class="proposals__list container">
+          <li class="proposals__item proposal">
+            <i class="fas fa-info"></i>
+            <div class="proposal__info">
+              <h3 class="proposal__title">Started kit</h3>
+              <span class="proposal__price">49</span>
+            </div>
+            <p class="proposal__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="proposal__list">
+              <li class="proposal__item">
+                Basic Features
+              </li>
+              <li class="proposal__item">
+                Up to 5 products
+              </li>
+              <li class="proposal__item">
+                50 Users Panels
+              </li>
+            </ul>
+            <button class="proposal__button main__button" type="button">Choose</button>
+          </li>
+          <li class="proposals__item proposal">
+            <i class="fas fa-medal"></i>
+            <div class="proposal__info">
+              <h3 class="proposal__title">Professional</h3>
+              <span class="proposal__price">149</span>
+            </div>
+            <p class="proposal__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="proposal__list">
+              <li class="proposal__item">
+                Basic Features
+              </li>
+              <li class="proposal__item">
+                Up to 100 products
+              </li>
+              <li class="proposal__item">
+                100 Users Panels
+              </li>
+            </ul>
+            <button class="proposal__button main__button" type="button">Choose</button>
+          </li>
+          <li class="proposals__item proposal">
+            <i class="fas fa-lock-open"></i>
+            <div class="proposal__info">
+              <h3 class="proposal__title">Advanced</h3>
+              <span class="proposal__price">249</span>
+            </div>
+            <p class="proposal__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="proposal__list">
+              <li class="proposal__item">
+                Extended Features
+              </li>
+              <li class="proposal__item">
+                Unlimiled products
+              </li>
+              <li class="proposal__item">
+                Unlimiled Users Panels
+              </li>
+            </ul>
+            <button class="proposal__button main__button" type="button">Choose</button>
+          </li>
+        </ul>
+      </section>
+      <div class="clients" id="clients">
+        <div class="clients__content container">
+          <h2 class="clients__title">Our Clients</h2>
+          <p class="clients__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <p class="clients__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+      <section class="showcase">
+        <div class="showcase__content container">
+          <h2 class="showcase__title">Showcase</h2>
+          <p class="showcase__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <ul class="showcase__list">
+            <li class="showcase__item showcase__item--first">
+              <a class="showcase__link" href="#nowhear">
+                <img class="showcase__img" src="img/content/showcase-01.jpg" width="800" height="400" alt="Photo">
+              </a>
+              <p class="showcase__item-title">Description for photo</p>
+            </li>
+            <li class="showcase__item showcase__item--second">
+              <a class="showcase__link" href="#nowhear">
+                <img class="showcase__img" src="img/content/showcase-02.jpg" width="397" height="400" alt="Photo">
+              </a>
+              <p class="showcase__item-title">Description for photo</p>
+            </li>
+            <li class="showcase__item showcase__item--third">
+              <a class="showcase__link" href="#nowhear">
+                <img class="showcase__img" src="img/content/showcase-03.jpg" width="397" height="300" alt="Photo">
+              </a>
+              <p class="showcase__item-title">Description for photo</p>
+            </li>
+            <li class="showcase__item showcase__item--fourth">
+              <a class="showcase__link" href="#nowhear">
+                <img class="showcase__img" src="img/content/showcase-04.jpg" width="397" height="300" alt="Photo">
+              </a>
+              <p class="showcase__item-title">Description for photo</p>
+            </li>
+            <li class="showcase__item showcase__item--fifth">
+              <a class="showcase__link" href="#nowhear">
+                <img class="showcase__img" src="img/content/showcase-05.jpg" width="397" height="300" alt="Photo">
+              </a>
+              <p class="showcase__item-title">Description for photo</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top container">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#nowhear">
+                Home
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#about">
+                About
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#products">
+                Products
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#pricing">
+                Pricing
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#clients">
+                Clients
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#nowhear">
+                Careers
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#contact">
+                Contacts
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#nowhear">
+                Terms
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#nowhear">
+                Twitter
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#nowhear">
+                Facebook
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#nowhear">
+                Instagram
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#nowhear">
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__feedback feedback" id="#contact">
+          <h2 class="feedback__title">Send us a note</h2>
+          <form class="feedback__form">
+            <input type="text" name="user-name" placeholder="Name" aria-label="Enter your name" required>
+            <input type="text" name="user-email" placeholder="Email" aria-label="Enter your email" required>
+            <input type="tel" name="user-phone" placeholder="Phone" aria-label="Enter your phone" required>
+            <textarea id="question" name="question" rows="6" placeholder="Your message" aria-label="Enter your message" required></textarea>
+            <button class="feedback__button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-content container">
+          <a class="footer__logo" aria-label="Logo">
+            <img src="img/content/logo.png" width="103" height="19" alt="Logo">
+          </a>
+          <p class="footer__dev">
+            <span>Asentus</span>
+            Threme powered by:
+            <span class="footer__dev-authos">
+              <a class="footer__dev-link" href="#nowhear">Keen Themes.com</a>
+            </span>
+          </p>
+        </div>
+      </div>
+      <a class="footer__top-anchor" href="#top">Top</a>
+    </footer>
+    <script src="https://kit.fontawesome.com/2e224a62e7.js" crossorigin="anonymous"></script>
+  </body>
+</html>

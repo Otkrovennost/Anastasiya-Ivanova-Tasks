@@ -1,0 +1,68 @@
+.proposal i {
+  margin-bottom: 20px;
+}
+
+.proposal__info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.proposal__title {
+  margin: 00;
+  color: #53535f; 
+}
+
+.proposal__price {
+  position: relative;
+  padding-left: 30px;
+  color: #53535f; 
+  font-weight: 600;
+}
+
+.proposal__price::before {
+  content: "-$";
+  position: absolute;
+  top:0;
+  left: 10px;
+  color: #acaea9; 
+  font-weight: 400;
+}
+
+.proposal__text {
+  margin: 0 0 20px 0;
+}
+
+.proposal__list {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proposal__item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.proposal__item::before {
+  content: "";
+  position: absolute;
+  bottom: 48%;
+  left: 0;
+  width: 15px;
+  height: 4px;
+  background-color: #13beda;
+}
+
+.proposal__button {
+  color: #53535f; 
+  background-color: #d2d2d3;
+  transition: all  easy 0.9s;
+}
+
+.proposal__button:focus,
+.proposal__button:hover {
+  color: #ffffff;
+  background-color: #13beda;
+  transition: all  easy 0.9s;
+}
