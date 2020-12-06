@@ -1,0 +1,28 @@
+Explain double equal conversions in comments
+
+Везде в предложенных примерах используется оператор ==, который допускает преобразование типов при проверки равенства.
+____________________________________________________________________________________________________________
+Значение null и undefined имеют особые типы в js. При нестрогом равенстве они не приводится ни к какому типу 
+и равны друг другу и не равны ничему другому.
+
+0 == null //false
+____________________________________________________________________________________________________________
+Cпецификация ECMA-262 (https://tc39.es/ecma262/#sec-testing-and-comparison-operations)
+7.2.14 Abstract Equality Comparison:
+2. If x is null and y is undefined, return true.
+3. If x is undefined and y is null, return true.
+
+null == undefined //true
+____________________________________________________________________________________________________________
+Насколько я поняла, здесь происходит преобразование следующим образом 
+ToPrimitive(x) == y либо ToPrimitive(y) == x
+Cпецификация ECMA-262 (https://tc39.es/ecma262/#sec-testing-and-comparison-operations)
+7.2.14 Abstract Equality Comparison:
+11. If Type(x) is either String, Number, BigInt, or Symbol and Type(y) is Object, return the result of the comparison x == ? ToPrimitive(y).
+12. If Type(x) is Object and Type(y) is either String, Number, BigInt, or Symbol, return the result of the comparison ? ToPrimitive(x) == y.
+Не совсем разобралась с этими примерами. Насколько я поняла, что объект(включая, массив или функцию) в первых 3 примерах дает false. В 4 примере как-то вычленяется 12 после применения ToPrimitive() и в результате вывод true.
+
+1 == {} //false
+{} == 1 //false
+({}) == 1 //false
+({toString: () => '12'}) == 12 //true
