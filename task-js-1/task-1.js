@@ -10,3 +10,5 @@ const calcLengthEachWords = (str) => {
     return str.split(' ').map(elem => elem + ' ' + elem.length);
   } 
 }
+
+console.log(+{});
