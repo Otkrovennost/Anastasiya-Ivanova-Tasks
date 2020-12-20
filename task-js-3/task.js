@@ -9,11 +9,8 @@ const deepCopyFunc = (obj) => {
 
   for (key in obj) {
     value = obj[key];
-    if(!Array.isArray(value) || !value instanceof Function) {
-      copyObj[key] = deepCopyFunc(value);
-    }
+    Array.isArray(value) || value instanceof Function ? obj.value : copyObj[key] = deepCopyFunc(value);
   }
-  // Проверка на функцию почему-то не работает..
 
   return copyObj;
 };
@@ -33,5 +30,7 @@ const obj_1 = {
 
 const obj_2 = deepCopyFunc(obj_1);
 
+console.log(obj_1);
 console.log(obj_2);
 console.log(obj_1 === obj_2 );
+console.log(obj_1);
