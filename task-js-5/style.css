@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Hind";
+  src: url("../fonts/Hind-Regular.woff2") format("woff2"), url("../fonts/Hind-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hind";
+  src: url("../fonts/Hind-Bold.woff2") format("woff2"), url("../fonts/Hind-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  min-width: 100%;
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Hind", "Arial", sans-serif;
+  color: #130252;
+}
+
+.calendar {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.calendar__content {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.calendar__months {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.calendar__month-current {
+  display: flex;
+}
+
+.calendar__month-select {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-right: 30px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background-color: #eceef1;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.calendar__years {
+  width: 100px;
+}
+
+.calendar__years input {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: inherit;
+  cursor: text;
+  font-size: inherit;
+  font-family: inherit;
+  background: #eceef1;
+  border: 0;
+  border-radius: 0;
+}
+
+.calendar__weekdays-inner {
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #dce9f5;
+}
+
+.calendar__weekdays-day {
+  flex: 1;
+  display: block;
+  margin: 0;
+  text-align: center;
+  color: #072d86;
+}
+
+.calendar__days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  outline: 0;
+  text-align: left;
+}
+
+.calendar__day {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  height: 57px;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  color: #484848;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+.calendar__day:focus,
+.calendar__day:hover {
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: rgb(209, 170, 245);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type="number"] {
+-moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+-moz-appearance: number-input;
+}
